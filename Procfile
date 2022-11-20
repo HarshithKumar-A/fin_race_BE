@@ -1,1 +1,1 @@
-web: gunicorn 'fin_race'
+web: gunicorn fin_race.wsgi --log-file -
