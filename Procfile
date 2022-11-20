@@ -1,1 +1,0 @@
-web: gunicorn fin_race.wsgi --log-file -
