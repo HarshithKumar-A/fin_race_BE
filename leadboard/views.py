@@ -5,7 +5,7 @@ from .serializer import LeadBoardSerializer, PlayerSerializer
 # Create your views here.
 
 class LeadboardView(viewsets.ModelViewSet):
-    queryset = LeadBoard.objects.all()
+    queryset = LeadBoard.objects.order_by('-score').all()
     serializer_class = LeadBoardSerializer
 
 

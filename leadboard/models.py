@@ -14,7 +14,7 @@ class Players(models.Model):
 
 class LeadBoard(models.Model):
     name = models.ForeignKey(Players,  related_name='player_scores', on_delete=models.CASCADE)
-    score = models.PositiveIntegerField()
+    score = models.FloatField(default=0)
     
 
     def __str__(self):
