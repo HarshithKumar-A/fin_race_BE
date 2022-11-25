@@ -15,7 +15,7 @@ class LeadBoardSerializer(serializers.ModelSerializer):
     class Meta:
         model = LeadBoard
         ordering = ('score', )
-        fields = ('name','score','player_name')
+        fields = ('id', 'name','score','player_name')
         # write_only = ('name',)
 
     def get_player_name(self, obj):
